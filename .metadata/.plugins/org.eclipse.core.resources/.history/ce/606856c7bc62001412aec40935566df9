@@ -1,0 +1,28 @@
+package com.example.mydenonalarmclock;
+
+import android.app.Activity;
+import android.app.IntentService;
+import android.content.Intent;
+import android.widget.Toast;
+
+public class MySchedulingService extends IntentService {
+
+	Activity a;
+	
+	public MySchedulingService(Activity a) {
+		super("SchedulingService");
+		this.a = a;
+	}
+
+	@Override
+	protected void onHandleIntent(Intent intent) {
+		
+		Toast.makeText(a.getBaseContext(), "Alarm", Toast.LENGTH_SHORT).show();
+		
+	}
+	
+	
+
+	
+	
+}

@@ -1,0 +1,10 @@
+
+public class DenonAlarm extends Thread{
+
+	
+	
+	public DenonAlarm(String ip, AlarmStrategy as){
+		
+	}
+	
+}

@@ -1,0 +1,30 @@
+import java.io.PrintWriter;
+
+
+public class DirectStrategy implements AlarmStrategy{
+
+	@Override
+	public void startStrategy(PrintWriter out) {
+		
+//		out.print("PWON\n");
+//		try {
+//			Thread.sleep(10000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		
+		out.print("ZMFAVORITE3\n");
+		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		out.println("MV30/n");
+
+		
+	}
+	
+}

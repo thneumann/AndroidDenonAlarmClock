@@ -1,0 +1,6 @@
+
+public interface AlarmStrategy {
+
+	public void startStrategy(); //Add Connection attribute
+	
+}

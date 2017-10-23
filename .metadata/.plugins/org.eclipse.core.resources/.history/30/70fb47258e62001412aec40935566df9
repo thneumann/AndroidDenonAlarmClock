@@ -1,0 +1,9 @@
+
+public class testMain {
+
+	public static void main(String[] args) {
+		AlarmStrategy as = new DirectStrategy();
+		DenonAlarm da = new DenonAlarm(192.168.100.228, as);
+	}
+	
+}

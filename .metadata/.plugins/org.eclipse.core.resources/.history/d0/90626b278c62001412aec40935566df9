@@ -1,0 +1,18 @@
+
+public class DenonAlarm extends Thread{
+	
+	private String ip;
+	private AlarmStrategy as;
+	
+	public DenonAlarm(String ip, AlarmStrategy as){
+		this.ip = ip;
+		this.as = as;
+	}
+	
+	@Override
+	public void run() {
+		//TODO connect with receiver
+		//TODO start strategy
+	}
+	
+}

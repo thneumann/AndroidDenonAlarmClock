@@ -1,0 +1,15 @@
+package DenonTelnetSender;
+
+import java.io.PrintWriter;
+
+public class SlowStrategy implements AlarmStrategy{
+
+	@Override
+	public void startStrategy(PrintWriter out) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+}

@@ -1,0 +1,83 @@
+package com.example.mydenonalarmclock;
+
+import java.util.Calendar;
+
+import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.TimePicker;
+
+public class Add_New_Alarm extends ActionBarActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_add__new__alarm);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.add__new__alarm, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+	
+	public void saveAlarm(View v){
+		//TODO save alarm
+		TimePicker tp = (TimePicker) findViewById(R.id.timePicker1);
+		Calendar calendar = Calendar.getInstance();
+		calendar.set(Calendar.HOUR_OF_DAY, tp.getCurrentHour());
+		calendar.set(Calendar.MINUTE, tp.getCurrentMinute());
+		boolean monday, tuesday, wednesday, thursday, friday, saturday, sunday;
+		
+		CheckBox cb = (CheckBox) findViewById(R.id.checkBoxMonday);
+		if(cb.isChecked()){
+			monday = true;
+		}
+		cb = (CheckBox) findViewById(R.id.checkBoxTuesday);
+		if(cb.isChecked()){
+			tuesday = true;
+		}
+		cb = (CheckBox) findViewById(R.id.checkBoxWednesday);
+		if(cb.isChecked()){
+			wednesday = true;
+		}
+		cb = (CheckBox) findViewById(R.id.checkBoxThursday);
+		if(cb.isChecked()){
+			thursday = true;
+		}
+		cb = (CheckBox) findViewById(R.id.checkBoxFriday);
+		if(cb.isChecked()){
+			friday = true;
+		}
+		cb = (CheckBox) findViewById(R.id.checkBoxSaturday);
+		if(cb.isChecked()){
+			saturday = true;
+		}
+		cb = (CheckBox) findViewById(R.id.checkBoxSunday);
+		if(cb.isChecked()){
+			sunday = true;
+		}
+		
+		
+		
+		
+		finish();
+	}
+	
+}

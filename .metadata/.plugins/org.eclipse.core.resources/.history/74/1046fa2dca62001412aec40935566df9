@@ -1,0 +1,29 @@
+package com.example.mydenonalarmclock;
+
+import java.io.Serializable;
+
+public class Alarm implements Serializable {
+
+	private boolean monday, tuesday, wednesday, thursday, friday, saturday, sunday;
+	private int hours;
+	private int minutes;
+	private final int seconds = 0;
+	private boolean isEnabled = false;
+	
+	public Alarm(boolean monday, boolean tuesday, boolean wednesday,
+			boolean thursday, boolean friday, boolean saturday, boolean sunday,
+			int hours, int minutes) {
+		super();
+		this.monday = monday;
+		this.tuesday = tuesday;
+		this.wednesday = wednesday;
+		this.thursday = thursday;
+		this.friday = friday;
+		this.saturday = saturday;
+		this.sunday = sunday;
+		this.hours = hours;
+		this.minutes = minutes;
+	}
+	
+	
+}

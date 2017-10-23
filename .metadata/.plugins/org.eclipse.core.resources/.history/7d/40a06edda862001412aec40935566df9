@@ -1,0 +1,5 @@
+package DenonTelnetSender;
+
+public class SlowStrategy {
+
+}

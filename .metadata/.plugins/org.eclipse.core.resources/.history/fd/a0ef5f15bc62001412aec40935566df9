@@ -1,0 +1,13 @@
+package com.example.mydenonalarmclock;
+
+import android.app.IntentService;
+
+public class MySchedulingService extends IntentService {
+
+	public MySchedulingService(String name) {
+		super(name);
+	}
+
+	
+	
+}

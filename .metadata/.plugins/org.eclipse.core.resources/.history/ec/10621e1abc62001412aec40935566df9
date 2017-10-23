@@ -1,0 +1,20 @@
+package com.example.mydenonalarmclock;
+
+import android.app.IntentService;
+import android.content.Intent;
+
+public class MySchedulingService extends IntentService {
+
+	public MySchedulingService() {
+		super("");
+	}
+
+	@Override
+	protected void onHandleIntent(Intent intent) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+}

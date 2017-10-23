@@ -1,0 +1,22 @@
+import java.io.BufferedReader;
+
+
+public class InputReader extends Thread{
+
+	private BufferedReader in;
+	private boolean stop = false;
+	
+	public InputReader(BufferedReader in){
+		this.in = in;
+	}
+	
+	@Override
+	public void run() {
+		
+	}
+	
+	private void stopReader(){
+		stop = true;
+	}
+	
+}
